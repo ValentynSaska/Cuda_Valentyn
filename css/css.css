@@ -1,0 +1,211 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+   text-decoration: none;
+    color: #fff;
+}
+
+.header{
+    background-color: #87509c;
+}
+.container1{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 55px 42px;
+}
+.block_header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+}
+.block_menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu_item{
+    list-style: none;
+    font-size: 16px;
+    margin-right: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+}
+.menu_link{
+    display: flex;
+    padding: 5px 17px;
+}
+.menu_link:hover{
+    border-radius: 5px;
+    background-color: #643a79;
+}
+.active{
+    display: flex;
+    padding: 5px 17px;
+    border-radius: 5px;
+    background-color: #643a79;
+}
+.header_text{
+    text-align: center;
+    list-style: none;
+    font-size: 42px;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    padding-bottom: 62px;
+}
+.btn{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+    padding: 20px 80px;
+    text-transform: uppercase;
+    border-color: #eb7d4b;
+    background-color: #eb7d4b;
+    color: #fff;
+    border-bottom: 3px solid #c86a40;
+    border-radius: 5px;
+    margin-bottom: 145px;
+}
+
+/*Section 2*/
+
+.section{
+    background-color: #17c2a4;
+    padding: 120px 0px 120px 0px;
+}
+.container2{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: #fff;
+}
+.block_title{
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+}
+.block_title::after{
+    top: 22px;
+    display: block;
+    content: "";
+    background-color: #14a58c;
+    width: 87px;
+    height: 4px;
+    margin: 15px auto 0;
+}
+.block_text{
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 24px;
+    font-size: 18px;
+}
+.block_service{
+    display: flex;
+    margin-top: 84px;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.item_list{
+    list-style: none;
+    display: block;
+    width: 260px;
+}
+.item_title{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 63px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+.item_text{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16;
+    font-weight: lighter;
+}
+
+/*Adaptation*/
+@media screen and (max-width: 720px) {
+    .block_menu {
+        margin-top: 20px;
+        flex-direction: column; /* Змінюємо напрямок на вертикальний для елементів блок-меню */
+    }
+    .container1 {
+        padding: 20px; /* Adjusted padding for smaller screens */
+    }
+    
+    .block_header {
+        flex-direction: column; /* Items should stack vertically on smaller screens */
+        margin-bottom: 30px; /* Reduced margin for smaller screens */
+        align-items: center; /* Center align for smaller screens */
+    }
+    
+    .menu_item {
+        margin-right: 0; /* Remove the right margin for the menu items */
+        margin-bottom: 10px; /* Add a bottom margin for spacing */
+        text-align: center; /* Center align the menu items */
+    }
+    
+    .header_text {
+        font-size: 32px; /* Decreased font size for better readability on smaller screens */
+        padding-bottom: 40px; /* Adjusted padding for smaller screens */
+    }
+    
+    .btn {
+        font-size: 16px; /* Decreased font size for the button */
+        padding: 15px 40px; /* Adjusted padding for smaller screens */
+        margin-bottom: 50px; /* Adjusted margin for smaller screens */
+    }
+    
+    .section {
+        padding: 60px 0; /* Adjusted padding for smaller screens */
+    }
+    
+    .block_title {
+        font-size: 28px; /* Decreased font size for smaller screens */
+    }
+    
+    .block_text {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+    
+    .block_service {
+        flex-wrap: wrap; /* Items will wrap on smaller screens */
+        justify-content: center; /* Center align the items */
+    }
+    
+    .item_list {
+        width: 100%; /* Take full width of the container */
+        margin-bottom: 40px; /* Add margin between items */
+    }
+    
+    .item_image {
+        text-align: center; /* Center align the images */
+    }
+    
+    .item_title {
+        font-size: 20px; /* Decreased font size for smaller screens */
+        padding-top: 20px; /* Adjusted padding for smaller screens */
+        padding-bottom: 10px; /* Adjusted padding for smaller screens */
+    }
+    
+    .item_text {
+        font-size: 14px; /* Decreased font size for smaller screens */
+    }
+}
